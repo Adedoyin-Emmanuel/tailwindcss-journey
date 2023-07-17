@@ -1,19 +1,11 @@
+import AppNav from "../../components/AppNav/AppNav";
 
-import React from "react";
-import {Link, useNavigate} from "react-router-dom";
-
-interface HomeProps {
-    
-}
-
-const Home:React.FC = (): JSX.Element => {
-    const navigateTo = useNavigate();
-    return (
-        <React.Fragment>
-            <h1>Home works!</h1>
-        </React.Fragment>
-    );  
-}
+const Home = (): JSX.Element => {
+  return (
+    <section className=" w-full h-screen bg-gradient-to-bl from-black to-blue-950">
+      <AppNav />
+    </section>
+  );
+};
 
 export default Home;
-    
