@@ -22,18 +22,27 @@ const AppNav: React.FC = (): JSX.Element => {
 
   return (
     <nav className="w-screen flex items-center md:justify-start justify-between md:flex-row flex-col space-x-5 py-5">
-      <h2 className="font-extrabold text-2xl text-slate-200 mx-5 md:block hidden">
-        Tailwind
+      <h2 className="font-extrabold text-2xl text-slate-200 mx-5 md:block hidden cursor-pointer hover:text-sky-300 transition-all duration-75 ease-in-linear">
+        <Link to="/">Tailwind</Link>
       </h2>
 
       <section className="hidden md:flex items-center justify-between w-60">
-        <Link to="/" className="capitalize inline-block text-slate-100">
+        <Link
+          to="/"
+          className="capitalize inline-block text-slate-100 border-transparent border-solid border-b-2 p-2 hover:border-sky-300 transition-all duration-100 ease-in-out"
+        >
           home
         </Link>
-        <Link to="about" className="capitalize inline-block text-slate-100">
+        <Link
+          to="about"
+          className="capitalize inline-block text-slate-100 border-transparent border-solid border-b-2 p-2 hover:border-sky-300 transition-all duration-100 ease-in-out"
+        >
           about
         </Link>
-        <Link to="contact" className="capitalize inline-block text-slate-100">
+        <Link
+          to="contact"
+          className="capitalize inline-block text-slate-100 border-transparent border-solid border-b-2 p-2 hover:border-sky-300 transition-all duration-100 ease-in-out"
+        >
           contact
         </Link>
       </section>
@@ -41,7 +50,7 @@ const AppNav: React.FC = (): JSX.Element => {
       <section className="md:hidden flex w-full flex-col">
         <section className="header flex w-full items-center justify-between">
           <h2 className="font-extrabold text-2xl text-slate-200 mx-5">
-            Tailwind
+            <Link to="/">Tailwind</Link>
           </h2>
 
           <section
