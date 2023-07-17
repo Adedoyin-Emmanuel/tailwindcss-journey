@@ -1,17 +1,20 @@
-import LinuxLogo from "./assets/linux-logo.png";
 import "./App.css";
 import Home from "./pages/Home/Home";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <section className="App w-full h-screen bg-gradient-to-bl from-black to-blue-950  ">
-      <section className="w-full flex items-center justify-center flex-col ">
-      
-      </section>
-    </section>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="about" element={<About />}></Route>
+        <Route path="contact" element={<Contact />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 export default App;
