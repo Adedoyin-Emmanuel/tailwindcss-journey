@@ -1,5 +1,9 @@
 import LinuxLogo from "./assets/linux-logo.png";
 import "./App.css";
+import Home from "./pages/Home/Home";
+import Contact from "./pages/Contact/Contact";
+import About from "./pages/About/About";
+import NotFound from "./pages/NotFound/NotFound";
 
 const App = () => {
   return (
