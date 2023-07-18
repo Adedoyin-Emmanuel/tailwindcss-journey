@@ -1,15 +1,15 @@
 import React from "react";
 
-interface AppHeroProps {
+interface AppLayoutProps {
   className?: string;
   children?: JSX.Element | JSX.Element[];
   others?: React.Attributes;
 }
-const AppHero = ({
+const AppLayout = ({
   className,
   children,
   others,
-}: AppHeroProps): JSX.Element => {
+}: AppLayoutProps): JSX.Element => {
   return (
     <section className={`w-full md:mx-auto md:my-12 ${className}`} {...others}>
       {children}
@@ -17,4 +17,4 @@ const AppHero = ({
   );
 };
 
-export default AppHero;
+export default AppLayout;

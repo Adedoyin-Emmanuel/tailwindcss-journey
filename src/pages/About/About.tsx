@@ -1,12 +1,12 @@
 import AppNav from "../../components/AppNav/AppNav";
-import AppHero from "../../components/AppHero/AppHero";
+import AppLayout from "../../components/AppLayout/AppLayout";
 
 const Home = (): JSX.Element => {
   return (
     <section className=" w-full h-screen bg-gradient-to-bl from-black to-blue-950 overflow-x-hidden">
       <AppNav />
 
-      <AppHero>
+      <AppLayout>
         <h2 className="text-center text-3xl mx:mx-auto  mx-5 md:text-6xl capitalize font-bold bg-clip-text text-transparent bg-gradient-to-br from-sky-300 to-violet-500 ">
           Why tailwindcss ?
         </h2>
@@ -38,7 +38,7 @@ const Home = (): JSX.Element => {
           <br className="hidden md:block" />
           with my friends and build awesome projects.
         </p>
-      </AppHero>
+      </AppLayout>
     </section>
   );
 };
