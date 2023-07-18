@@ -19,7 +19,7 @@ const AppCard = ({
 }: AppCardProps): JSX.Element => {
   return (
     <section
-      className={`card-section border border-slate-600 rounded-lg mx-5 p-4 flex flex-col justify-center md:w-1/4 ${className} hover:border-violet-200 cursor-pointer transition-all duration-100`}
+      className={`card-section border border-slate-600 rounded-lg mx-5 p-4 flex flex-col justify-center md:w-1/4 ${className} hover:border-violet-200 cursor-pointer transition-all duration-100 mb-14`}
       {...others}
     >
       <section className="card-image mx-auto mb-3">

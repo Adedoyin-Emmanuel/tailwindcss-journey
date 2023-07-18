@@ -1,5 +1,5 @@
 import AppNav from "../../components/AppNav/AppNav";
-import AppLayout from "../../components/AppLayout/AppLayout";
+import AppLayout from "../../components/AppHero/AppLayout";
 
 const Home = (): JSX.Element => {
   return (

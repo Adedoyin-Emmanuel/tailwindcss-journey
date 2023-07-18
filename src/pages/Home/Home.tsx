@@ -1,6 +1,8 @@
 import AppNav from "../../components/AppNav/AppNav";
-import AppLayout from "../../components/AppLayout/AppLayout";
+import AppLayout from "../../components/AppHero/AppLayout";
 import LinuxLogo from "./../../assets/linux-logo.png";
+import WindowsLogo from "./../../assets/windows-logo.png";
+import AppleLogo from "./../../assets/apple-logo.png";
 import AppCard from "../../components/AppCard/AppCard";
 
 const Home = (): JSX.Element => {
@@ -22,15 +24,27 @@ const Home = (): JSX.Element => {
           All components
         </h2>
 
-        <section className="all-components">
-          <AppCard
-            imageSrc={LinuxLogo}
-            cardHeader="Linux teddy bear"
-            cardPrice={500}
-          >
-            linux is user friendly, he is just picky about the kind of friends
-            he wants.
-          </AppCard>
+        <section className="all-components mx-auto">
+          <section className="all-card flex flex-col md:flex-row flex-wrap justify-center">
+            <AppCard imageSrc={LinuxLogo} cardHeader="Linux OS" cardPrice={500}>
+              linux is user friendly, he is just picky about the kind of friends
+              he wants.
+            </AppCard>
+
+            <AppCard
+              imageSrc={WindowsLogo}
+              cardHeader="Windows OS"
+              cardPrice={500}
+            >
+              Windows, nice OS, has the largest user base. home for most deadly
+              viruses. We thank God for windows 11.
+            </AppCard>
+
+            <AppCard imageSrc={AppleLogo} cardHeader="Mac OS" cardPrice={500}>
+              Mac OS, every developer's dream, best for cross platform
+              development. You must be a rich guy if you are using mac
+            </AppCard>
+          </section>
         </section>
       </AppLayout>
     </section>
