@@ -21,7 +21,7 @@ const AppNav: React.FC = (): JSX.Element => {
   };
 
   return (
-    <nav className="w-screen flex items-center md:justify-start justify-between md:flex-row flex-col space-x-5 py-5">
+    <nav className="w-screen flex items-center md:justify-start justify-between md:flex-row flex-col  py-5">
       <h2 className="font-extrabold text-2xl text-slate-200 mx-5 md:block hidden cursor-pointer hover:text-sky-300 transition-all duration-75 ease-in-linear">
         <Link to="/">Tailwind</Link>
       </h2>
