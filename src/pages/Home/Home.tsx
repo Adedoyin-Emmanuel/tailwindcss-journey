@@ -54,10 +54,15 @@ const Home = (): JSX.Element => {
             >
               Github hoodie but for boring devs
             </AppCard>
+          </section>
+        </section>
 
-            <h2 className="md:mx-auto mx-5 text-center text-2xl md:text-4xl capitalize font-bold bg-clip-text text-transparent bg-gradient-to-br from-sky-300 to-violet-500 my-12">
-              Trending Round-Neck 🚀
-            </h2>
+        <section className="all-components mx-auto">
+          <h2 className="md:mx-auto mx-5 text-center text-2xl md:text-4xl capitalize font-bold bg-clip-text text-transparent bg-gradient-to-br from-sky-300 to-violet-500 my-12">
+            Trending Round-Neck 🚀
+          </h2>
+
+          <section className="all-card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <AppCard
               imageSrc={Tee1}
               cardHeader="Github Rainbow Tee"
@@ -81,18 +86,19 @@ const Home = (): JSX.Element => {
             >
               Github tee shirt but with a nice rainbow, it is what it is 😆
             </AppCard>
+          </section>
+        </section>
 
-            <h2 className="md:mx-auto mx-5 text-center text-2xl md:text-4xl capitalize font-bold bg-clip-text text-transparent bg-gradient-to-br from-sky-300 to-violet-500 my-12">
-              We've Got Pants
-            </h2>
-
+        <section className="all-components mx-auto">
+          <h2 className="md:mx-auto mx-5 text-center text-2xl md:text-4xl capitalize font-bold bg-clip-text text-transparent bg-gradient-to-br from-sky-300 to-violet-500 my-12">
+            We've Got Pants
+          </h2>
+          <section className="all-card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <AppCard
               imageSrc={Pants}
               cardHeader="Github Rainbow Tee"
               cardPrice={10}
-            >
-              Github pants, they look fantastic
-            </AppCard>
+            ></AppCard>
           </section>
         </section>
       </AppLayout>
