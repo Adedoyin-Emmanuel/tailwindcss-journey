@@ -1,9 +1,11 @@
 import AppNav from "../../components/AppNav/AppNav";
 import AppLayout from "../../components/AppHero/AppLayout";
-import LinuxLogo from "./../../assets/linux-logo.png";
 import WindowsLogo from "./../../assets/windows-logo.png";
 import AppleLogo from "./../../assets/apple-logo.png";
 import AppCard from "../../components/AppCard/AppCard";
+import Hoodie1 from "./../../assets/hoodie-1.png";
+import Hoodie2 from "./../../assets/hoodie-2.png";
+import Hoodie3 from "./../../assets/hoodie-3.png";
 
 const Home = (): JSX.Element => {
   return (
@@ -21,28 +23,32 @@ const Home = (): JSX.Element => {
         </p>
 
         <h2 className="md:mx-auto mx-5 text-center text-2xl md:text-4xl capitalize font-bold bg-clip-text text-transparent bg-gradient-to-br from-sky-300 to-violet-500 my-12">
-          All components
+          Trending Hoodies 🚀
         </h2>
 
         <section className="all-components mx-auto">
           <section className="all-card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            <AppCard imageSrc={LinuxLogo} cardHeader="Linux OS" cardPrice={500}>
-              linux is user friendly, he is just picky about the kind of friends
-              he wants.
+            <AppCard
+              imageSrc={Hoodie1}
+              cardHeader="Github Hoodie"
+              cardPrice={50}
+            >
+              Take your love for Github to the next level
             </AppCard>
 
             <AppCard
-              imageSrc={WindowsLogo}
-              cardHeader="Windows OS"
-              cardPrice={500}
+              imageSrc={Hoodie2}
+              cardHeader="Github Hoodie Pro Max"
+              cardPrice={70}
             >
-              Windows, nice OS, has the largest user base. home for most deadly
-              viruses. We thank God for windows 11.
+              Github hoodie but rainbow color, it is what it is 😆
             </AppCard>
-
-            <AppCard imageSrc={AppleLogo} cardHeader="Mac OS" cardPrice={500}>
-              Mac OS, every developer's dream, best for cross platform
-              development. You must be a rich guy if you are using mac
+            <AppCard
+              imageSrc={Hoodie3}
+              cardHeader="Github Nerdy Hoodie"
+              cardPrice={30}
+            >
+              Github hoodie but for boring devs
             </AppCard>
           </section>
         </section>
