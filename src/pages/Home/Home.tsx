@@ -98,7 +98,7 @@ const Home = (): JSX.Element => {
               imageSrc={Pants}
               cardHeader="Github Rainbow Tee"
               cardPrice={10}
-            ></AppCard>
+            >Github trousers, perfect match for the hoodie</AppCard>
           </section>
         </section>
       </AppLayout>
