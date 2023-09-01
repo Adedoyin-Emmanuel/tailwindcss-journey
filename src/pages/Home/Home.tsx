@@ -6,6 +6,10 @@ import AppCard from "../../components/AppCard/AppCard";
 import Hoodie1 from "./../../assets/hoodie-1.png";
 import Hoodie2 from "./../../assets/hoodie-2.png";
 import Hoodie3 from "./../../assets/hoodie-3.png";
+import Tee1 from "./../../assets/tee-1.png";
+import Tee2 from "./../../assets/tee-2.png";
+import Tee3 from "./../../assets/tee-3.png";
+import Pants from "./../../assets/trouser.png";
 
 const Home = (): JSX.Element => {
   return (
@@ -49,6 +53,45 @@ const Home = (): JSX.Element => {
               cardPrice={30}
             >
               Github hoodie but for boring devs
+            </AppCard>
+
+            <h2 className="md:mx-auto mx-5 text-center text-2xl md:text-4xl capitalize font-bold bg-clip-text text-transparent bg-gradient-to-br from-sky-300 to-violet-500 my-12">
+              Trending Round-Neck 🚀
+            </h2>
+            <AppCard
+              imageSrc={Tee1}
+              cardHeader="Github Rainbow Tee"
+              cardPrice={10}
+            >
+              Github tee shirt but with the rainbow color, it is what it is 😆
+            </AppCard>
+
+            <AppCard
+              imageSrc={Tee2}
+              cardHeader="Github Plain Tee"
+              cardPrice={10}
+            >
+              Github plain tee shirt, looks good
+            </AppCard>
+
+            <AppCard
+              imageSrc={Tee3}
+              cardHeader="Github Rainbow Tee"
+              cardPrice={10}
+            >
+              Github tee shirt but with a nice rainbow, it is what it is 😆
+            </AppCard>
+
+            <h2 className="md:mx-auto mx-5 text-center text-2xl md:text-4xl capitalize font-bold bg-clip-text text-transparent bg-gradient-to-br from-sky-300 to-violet-500 my-12">
+              We've Got Pants
+            </h2>
+
+            <AppCard
+              imageSrc={Pants}
+              cardHeader="Github Rainbow Tee"
+              cardPrice={10}
+            >
+              Github pants, they look fantastic
             </AppCard>
           </section>
         </section>
