@@ -11,7 +11,7 @@ const Home = (): JSX.Element => {
       <AppNav />
 
       <AppLayout>
-        <h2 className="p-5 sm:text-5xl md:mx-auto text-left  md:text-center text-3xl md:text-6xl capitalize font-bold bg-clip-text text-transparent bg-gradient-to-br from-sky-300 to-violet-500 ">
+        <h2 className="p-5 md:text-4xl md:mx-auto text-left  md:text-center text-3xl lg:text-6xl capitalize font-bold bg-clip-text text-transparent bg-gradient-to-br from-sky-300 to-violet-500 ">
           Hi Everyone,
           <br className="block md:hidden" />I am learning tailwind
         </h2>
@@ -25,7 +25,7 @@ const Home = (): JSX.Element => {
         </h2>
 
         <section className="all-components mx-auto">
-          <section className="all-card flex flex-col md:flex-row flex-wrap justify-center">
+          <section className="all-card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             <AppCard imageSrc={LinuxLogo} cardHeader="Linux OS" cardPrice={500}>
               linux is user friendly, he is just picky about the kind of friends
               he wants.
